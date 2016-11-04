@@ -1,0 +1,17 @@
+<div class="list-wrapper align-center">
+  <div class="list">
+  <div ng-repeat="x in detail" class="list-cards all-width">
+    <div>
+    <span>{{x.date}}</span>
+    <span>{{x.host}}</span>
+    <span>{{x.restaurant}}</span>
+    <span>{{x.total}}</span>
+    <span>{{x.eaters}}</span>
+    <span>{{x.each}}</span>
+    <span>{{x.comments}}</span>
+    <span>{{x.mark}}</span>
+    <span>{{x.eatwenum}}</span>
+    </div>
+  </div>
+  </div>
+</div>

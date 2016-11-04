@@ -1,0 +1,87 @@
+<div class="container">
+  <form ng-controller="add" ng-submit="addBill()" method="get" name="addRecord" id="addRecord" class="indent_r">
+    <div class="no_border">
+      <div>
+        <div >
+          <h3 align="center">New Bill</h3>
+        </div>
+      </div>
+
+      <div class="margin">
+        <div>
+          <input name="year" id="year" type="text" size="2" maxlength="4" ng-model="param.year" required>
+          <input id="month" name="month" type="text"  size="2" maxlength="2" ng-model="param.month">
+          <input id="day" name="day" type="text" size="2" maxlength="2" ng-model="param.day">
+          <input name="cal" type="button" value=" ... " class="cal" onclick="return showCalendar('year', 'y-mm-dd');">
+          <img src="img/required_mark.png" ng-show="required_value"></img>
+        </div>
+      </div>
+
+      <div class="margin">
+        <div >
+          <div ng-controller="getRestaurant" class=""> 
+            <select name="restaurant" ng-model="param.restaurant" required> 
+              <option value="">WHERE</option>
+              <!--options-->
+              <option ng-repeat="x in rests" value="{{x.name}}">{{x.name}}</option>
+            </select>
+          <img src="img/required_mark.png" ng-show="required_value"></img>
+          </div>
+        </div>
+      </div>
+
+      <div class="margin">
+        <div >
+          <div ng-controller="getEaters" class="">
+            <select name="host" ng-model="param.host" required>
+              <option value="" width="30">HOST</option>
+              <!--eaters-->
+              <option ng-repeat="x in eaters">{{x.nick}}</option>
+            </div>
+          </select>
+          <img src="img/required_mark.png" ng-show="required_value"></img>
+        </div>
+      </div>
+    </div>
+
+    <div class="margin">
+      <div >
+        <select name="type" ng-model="param.type" required>
+          <option selected="selected" value=""/>TYPE
+          <option value="1"/>&#21320;&#39277;
+          <option value="required_value"/>&#26202;&#39277;
+          <option value="2"/>&#28165;&#36134
+        </select>
+          <img src="img/required_mark.png" ng-show="required_value"></img>
+      </div>
+    </div>
+
+    <div class="margin">
+      <div >
+        <input name="total" type="text" placeholder="BILL" ng-model="param.total" required/>
+        <img src="img/required_mark.png" ng-show="required_value"></img>
+      </div>
+    </div>
+    <div>
+      <div >
+        <input name="comments" type="text" placeholder="REMARK" ng-model="param.comments"/>
+      </div>
+    </div>
+
+    <!--checkbox-->
+    <!--<div ng-controller="getWallet" class="margin col">-->
+      <div><span class="highlight">***Please select attendees***</span></div>
+      <div ng-repeat="x in change"class="margin col">
+        <input type="checkbox" value="{{x.mail}}" name="" ng-model="x.selected">
+        <span>{{x.mail}} <img src='img/coin.png'></img> {{x.change}}</span>
+      <!--  <pre>{{x|json}}</pre>-->
+      </div>
+      <!--</div>-->
+    <div>
+      <input type="submit" name="submit" value="" class="margin">
+      <div><span class="highlight" ng-module="msg">{{msg}}</span></div>
+      <!--<a href="#detail"><img src="img/toright.png" class="toright"></img></a>-->
+    </div>
+  </form>
+</div>
+      <a href="#detail"><img src="img/toright.png" class="toright"></img></a>

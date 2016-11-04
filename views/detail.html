@@ -1,0 +1,24 @@
+<div class="align-center">
+<div ng-repeat="x in detail" class="list-cards" ng-class="{test:$first}">
+  <div class="align-center">
+    <label ng-if="x.comments === '' || ! x.comments">Have a Nice Day!</label>
+
+    <label class="maxrow">{{x.comments}}</label>
+    <label class="middle">
+      <label class="bold">花费:</label><label class="">{{x.total}}</label>
+      <label class="bold">人数:</label><label class="">{{x.eatersnum}}</label>
+    </label>
+    <label class="font-small">{{x.date}}</label>
+    </div>
+    <hr/>
+    <div id="first-con">
+    <p><label>付账: {{x.host}}</label></p>
+    <p><label>餐厅: {{x.restaurant}}</label></p> 
+    <p><label class="wider">参与: {{x.eaters}}</label></p>
+    <p><label>人均: {{x.each}}</label></p>
+    </div>
+    </div>
+    <div>
+    <a href="#all"><img src="img/toright.png" class="toright"></img></a>
+    </div>
+    </div>

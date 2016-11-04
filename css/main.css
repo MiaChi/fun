@@ -1,0 +1,390 @@
+body {
+  font-family:"SimHei","Georgia";
+  background-color:#edefed;
+}
+.container {
+  text-align:center;
+  background-color:#f5f5f5;
+  width:61.8%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:10px;
+}
+.margin {
+  margin-top:5px;
+  margin-bottom:3px;
+}
+.col {
+  text-align:left;
+  margin-left:30%;
+}
+
+.toright {
+  position:absolute;
+  top:30%;
+  right:2%;
+}
+
+.align {
+  padding-left: 2.5%; 
+  text-align: left
+}
+
+.digit {
+  font-family: monospace; padding-left: 3%; font-size: 15px; text-align: left
+}
+
+.indent_r { 
+  margin-top:20px;
+}
+
+.indent_m { 
+  margin: 3px 0px 3px 0px;
+}
+
+.indent_s {
+  padding-left: 10%
+}
+
+.no_border {
+  border-style: none;
+  border-spacing: 0;
+  width:61.8%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+a {
+  font-weight: normal; font-size: 15px;
+}
+
+h1,h3 {
+  color:black 
+}
+h1{
+  display:inline;
+}
+
+p.title {
+  text-align: left; padding-left: 5%; font-size: 14px; font-weight: bold; color: rgb(234, 0, 0)
+}
+
+.error {
+  font-size: 20px;
+}
+.image-coin {
+  margin-top:8px;
+}
+.cal {
+  margin-left:10px;
+}
+table {
+}
+
+th {
+  border-width: 0;
+  border-style: inset;
+  border-color: black;
+  color: white;
+  background-color: #8cb4d6;
+}
+
+td {
+  border-width: 0; 
+  border-style: inset;
+  border-color: black;
+  text-align: left;
+  color: black;
+  background-color: #acb6ce;
+  overflow: hidden;
+}
+td.date {
+  width:85px;
+}
+td.eaters {
+}
+td.host{
+}
+td.form {
+  border-width: 0px;
+  color: black;
+  font-weight: bold; 
+}
+
+td.point {
+  vertical-align: middle; 
+  text-align: center;
+}
+
+td.remark {
+  text-align: left; 
+  padding-left: 8px
+}
+span {
+  display:inline-block;
+}
+label {
+  display:inline-block;
+}
+.bold {
+  font-weight:bolder; 
+  background-color:#D3B89A;
+}
+.input_div{
+  margin:3px 0 3px 60px;
+  font-weight:bold;
+}
+.abwidth {
+  width:65px;
+}
+.myblock {
+  display:inline-block;
+  width:225px;
+  margin:3px 15px 3px 0;
+  background-color:#73dbc0;
+}
+.extra {
+  float:right;
+  display:none;
+}
+input[type="submit"] {
+  background-color:#D3B89A;
+  heigth:35px;
+  min-width:61.8%;
+  font-weight:bold;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 5px solid #D3B89A;
+  cursor:pointer;
+}
+.board{
+  white-space: nowrap;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 65px;
+  right: 0px;
+  bottom: 0px;
+  left: 350px;
+}
+.list {
+  background: #E2E4E6 none repeat scroll 0% 0%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  position: relative;
+  overflow-y: scroll;
+}
+.list-wrapper {
+  width: 61.08%;
+  margin: 0px 5px;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left:auto;
+  margin-right:auto;
+}
+.list-header {
+  flex: 0 0 auto;
+  padding: 0px 10px 8px 10px;
+  position: relative;
+  min-height: 19px;
+  text-align:center;
+}
+.list-cards {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0px 4px;
+  padding: 0px 4px;
+  z-index: 1;
+  background-color: #ccffff;
+  border-bottom: 1px solid #CCC;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  max-width: 20%;
+  height: 28.2%;
+  position: relative;
+  z-index: 0;
+  display:inline-block;
+  text-align:left;
+}
+.all-width {
+  max-width:100%;
+}
+.list-content {
+  text-align:left;
+  font-size:0.8em;
+}
+.list-content span{
+  width:80px; 
+  font-size:1em;
+}
+button {
+  font-family: black;    
+}
+.add-new-member{
+  font-family: black;    
+  display:inline-block;
+} 
+#info{
+  display:inline;
+  visibility:hidden;
+}
+input[type="text"] {
+  width:80%;
+  height:25px;
+  border-radius:10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+select {
+  width:80%;
+  height:25px;
+  border-radius:10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#year {
+  width:20%;
+  display:inline;
+}
+#month {
+  width:20%;
+  display:inline;
+}
+#day {
+  width:20%;
+  display:inline;
+}
+.list-cards {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0px 2px;
+  padding: 0px 2px;
+  z-index: 1;
+  background-color: #acb6ce;
+  border-bottom: 1px solid #CCC;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  max-width: 20%;
+  height: 28.2%;
+  position: relative;
+  z-index: 0;
+  display:inline-block;
+  text-align:left;
+}
+.test {
+  background:#ffffcc;
+  color:white;
+  background-image:url(../img/bg.png);
+  background-size:contain;
+  height:61.8%;
+  max-width:61.8%;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  font-size:1.5em;
+  text-align:center;
+}
+.test p {
+  line-height:80%;
+  font-size:0.8em;
+}
+.test #first-con {
+  margin-top:10%;
+}
+.align-center {
+  text-align:center;
+}
+p {
+  line-height:20%;
+  font-size:0.8em;
+}
+.wider {
+  line-height:100%;
+}
+.middle {
+  min-width:100%;
+}
+.font-small {
+  font-size:0.8em;
+}
+.maxrow {
+  max-width:100%;
+}
+.highlight {
+  background-color:#D3B89A;
+  font-size:bold;
+  border-radius:10px;
+  line-height:150%;
+  margin-top:3px;
+  min-width:61.8%;
+}
+.login {
+  text-align:center;
+  margin-top:10%;
+}
+.login #head {
+ height:20%;
+ width:40%;
+}
+.login p {
+  color:grey;
+}
+.i {
+  width:100%;
+  height:10%;
+  background-image: url(../img/bg.png);
+}
+.login input[type='text'] {
+  height:8%;
+  width:100%;
+  margin:auto;
+  border:0px;
+  margin:-7px 0;
+  border-radius:0;
+  background-color:#f5f5f5;
+}
+.login-input {
+  background-color:#f5f5f5;
+  height:8%;
+  width:100%;
+  border:0px;
+  margin:-7px 0;
+}
+.login button {
+  width:40%;
+  margin:1% 2.5%;
+  background-color:#6ca5d1;
+  border:0;
+  border-radius:10px;
+  color:white;
+  font-size:1em;
+}
+::-webkit-input-placeholder {
+  color: #d8d1ca;
+  text-align:center;
+  font-size:1em;
+  opacity:50%;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: red;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: red;  
+}
+:-ms-input-placeholder {  
+  color: red;  
+}
